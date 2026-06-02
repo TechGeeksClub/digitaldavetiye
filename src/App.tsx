@@ -5,7 +5,7 @@ import InvitationTemplate from "./components/InvitationTemplate";
 import { getInvitation } from "./invitations";
 import type { Invitation } from "./types";
 
-const defaultSlug = "ayse-mehmet";
+const defaultSlug = "safa-duygu";
 
 function getPathParts() {
   return window.location.pathname.split("/").filter(Boolean);
@@ -21,11 +21,11 @@ function HomePage() {
   return (
     <main className="landing-page">
       <section className="landing-panel">
-        <span className="eyebrow">Lokal Davetiye MVP</span>
-        <h1>Ayşe & Mehmet davetiyesi hazır.</h1>
+        <span className="eyebrow">Dijital Davetiye</span>
+        <h1>Duygu & Safa davetiyesi hazır.</h1>
         <p>
-          QR kod veya link davetiyeyi doğrudan açar. Katılım bildirimi ve medya
-          yükleme lokal backend'e kaydedilir.
+          QR kod veya link davetiyeyi doğrudan açar. Katılım bildirimi ve fotoğraf
+          paylaşımı harici formlar üzerinden alınır.
         </p>
         <div className="qr-card">
           <QRCodeSVG value={inviteUrl} size={176} level="H" includeMargin />

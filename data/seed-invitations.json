@@ -1,23 +1,23 @@
 {
   "invitations": [
     {
-      "slug": "ayse-mehmet",
+      "slug": "safa-duygu",
       "templateId": "classic-countdown",
-      "headline": "Nikahımıza Davetlisiniz",
-      "message": "Bu mutlu günümüzü sizinle paylaşmak istiyoruz. Davetimize bekliyoruz!",
+      "headline": "Düğünümüze Davetlisiniz",
+      "message": "Bu mutlu günümüzde sizleri aramızda görmekten mutluluk duyarız.",
       "couple": {
-        "bride": "Ayşe",
-        "groom": "Mehmet"
+        "bride": "Duygu",
+        "groom": "Safa"
       },
-      "eventDate": "2026-09-15",
+      "eventDate": "2026-08-15",
       "eventTime": "19:00",
       "venue": {
-        "name": "Çırağan Sarayı",
-        "address": "Çırağan Caddesi No:32, Beşiktaş, İstanbul",
-        "mapsUrl": "https://maps.google.com/?q=%C3%87%C4%B1ra%C4%9Fan%20Saray%C4%B1%20Be%C5%9Fikta%C5%9F%20%C4%B0stanbul"
+        "name": "Divan Düğün Salonu",
+        "address": "Divan Düğün Salonu",
+        "mapsUrl": "https://maps.google.com/?q=Divan%20D%C3%BC%C4%9F%C3%BCn%20Salonu"
       },
       "heroImageUrl": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85",
-      "hashtag": "AyseMehmetEvleniyor",
+      "hashtag": "DuyguSafaEvleniyor",
       "rsvpEnabled": true,
       "rsvpFormUrl": "https://forms.gle/K8AfMq1LccZFfXMfA",
       "mediaUploadEnabled": true,
@@ -29,43 +29,25 @@
       ],
       "events": [
         {
-          "title": "Kına Gecesi",
-          "date": "2026-09-12",
-          "time": "19:00",
-          "venueName": "Cevahir Wedding",
-          "address": "Şişli, İstanbul",
-          "dressCode": "Geleneksel kıyafet",
-          "note": "Geleneksel kına gecemizde sizi de aramızda görmek isteriz.",
-          "mapsUrl": "https://maps.google.com/?q=%C5%9Ei%C5%9Fli%20%C4%B0stanbul"
-        },
-        {
           "title": "Düğün",
-          "date": "2026-09-15",
-          "time": "20:00",
-          "venueName": "Çırağan Sarayı",
-          "address": "Beşiktaş, İstanbul",
+          "date": "2026-08-15",
+          "time": "19:00",
+          "venueName": "Divan Düğün Salonu",
+          "address": "Divan Düğün Salonu",
           "dressCode": "Şık giyim",
-          "note": "Nikah sonrası kutlama ve yemek.",
-          "mapsUrl": "https://maps.google.com/?q=Be%C5%9Fikta%C5%9F%20%C4%B0stanbul"
+          "note": "Düğünümüzde sizleri aramızda görmekten mutluluk duyarız.",
+          "mapsUrl": "https://maps.google.com/?q=Divan%20D%C3%BC%C4%9F%C3%BCn%20Salonu"
         }
       ],
       "travelGuide": {
-        "title": "Şehir Dışından mı Geliyorsunuz?",
+        "title": "Misafir Notları",
         "sections": [
           {
-            "title": "Nereleri Görmelisiniz?",
+            "title": "Etkinlik Bilgileri",
             "items": [
-              "Ortaköy Sahili - Boğaz manzarası için kısa bir yürüyüş",
-              "Dolmabahçe Sarayı - Tarihi bir durak",
-              "Yıldız Parkı - Sabah kahvesi ve fotoğraf için sakin bir rota"
-            ]
-          },
-          {
-            "title": "Şunları Yemeden Dönmeyin",
-            "items": [
-              "Kuruçeşme'de balık",
-              "Ortaköy kumpiri",
-              "Boğaz hattında Türk kahvesi"
+              "Düğün 15 Ağustos 2026 Cumartesi günü saat 19:00'da başlayacaktır.",
+              "Katılım bildiriminizi davetiye üzerindeki formdan iletebilirsiniz.",
+              "Fotoğraf ve videolarınızı davetiye üzerindeki yükleme bağlantısından paylaşabilirsiniz."
             ]
           }
         ]
