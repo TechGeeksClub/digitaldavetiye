@@ -1,8 +1,8 @@
 import { QRCodeSVG } from "qrcode.react";
 import { useEffect, useMemo, useState } from "react";
 import { ArrowRight, Link2, QrCode } from "lucide-react";
-import { fetchInvitation } from "./api";
 import InvitationTemplate from "./components/InvitationTemplate";
+import { getInvitation } from "./invitations";
 import type { Invitation } from "./types";
 
 const defaultSlug = "ayse-mehmet";
@@ -73,18 +73,17 @@ function InvitationPage({ slug }: { slug: string }) {
 
   useEffect(() => {
     let ignore = false;
-    fetchInvitation(slug)
-      .then((data) => {
-        if (!ignore) {
-          setInvitation(data);
-          document.title = `${data.couple.bride} & ${data.couple.groom} Davetiyesi`;
-        }
-      })
-      .catch((err: Error) => {
-        if (!ignore) {
-          setError(err.message);
-        }
-      });
+    const data = getInvitation(slug);
+    if (!data) {
+      setError("Davetiye bulunamadı.");
+      return;
+    }
+
+    if (!ignore) {
+      setInvitation(data);
+      document.title = `${data.couple.bride} & ${data.couple.groom} Davetiyesi`;
+    }
+
     return () => {
       ignore = true;
     };

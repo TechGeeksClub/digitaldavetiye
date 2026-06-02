@@ -19,7 +19,9 @@ export interface Invitation {
   heroImageUrl: string;
   hashtag: string;
   rsvpEnabled: boolean;
+  rsvpFormUrl?: string;
   mediaUploadEnabled: boolean;
+  mediaUploadUrl?: string;
   gallery: string[];
   events: InvitationEvent[];
   travelGuide: {

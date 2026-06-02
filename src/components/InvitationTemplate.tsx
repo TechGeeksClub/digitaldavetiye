@@ -9,10 +9,9 @@ import {
   Navigation,
   Sparkles
 } from "lucide-react";
-import { useEffect, useState } from "react";
-import { fetchMedia } from "../api";
+import { useState } from "react";
 import { useCountdown } from "../hooks/useCountdown";
-import type { Invitation, MediaUpload } from "../types";
+import type { Invitation } from "../types";
 import { createCalendarUrl, formatLongDate } from "../utils";
 import MediaUploadSection from "./MediaUploadSection";
 import RsvpForm from "./RsvpForm";
@@ -32,18 +31,7 @@ function CountBox({ value, label }: { value: number; label: string }) {
 
 export default function InvitationTemplate({ invitation }: Props) {
   const countdown = useCountdown(invitation.eventDate, invitation.eventTime);
-  const [media, setMedia] = useState<MediaUpload[]>([]);
   const [musicOn, setMusicOn] = useState(false);
-
-  const loadMedia = () => {
-    fetchMedia(invitation.slug)
-      .then(setMedia)
-      .catch(() => setMedia([]));
-  };
-
-  useEffect(() => {
-    loadMedia();
-  }, [invitation.slug]);
 
   const eventTitle = `${invitation.couple.bride} & ${invitation.couple.groom}`;
   const calendarUrl = createCalendarUrl({
@@ -207,11 +195,11 @@ export default function InvitationTemplate({ invitation }: Props) {
         </section>
 
         {invitation.rsvpEnabled ? (
-          <RsvpForm slug={invitation.slug} />
+          <RsvpForm formUrl={invitation.rsvpFormUrl} />
         ) : null}
 
         {invitation.mediaUploadEnabled ? (
-          <MediaUploadSection slug={invitation.slug} media={media} onUploaded={loadMedia} />
+          <MediaUploadSection uploadUrl={invitation.mediaUploadUrl} />
         ) : null}
 
         <footer className="invite-footer">

@@ -558,6 +558,12 @@ a {
   line-height: 1.6;
 }
 
+.section-copy {
+  margin: 0 0 18px;
+  color: #6f6257;
+  line-height: 1.6;
+}
+
 .upload-dropzone {
   display: grid;
   place-items: center;
@@ -569,6 +575,7 @@ a {
   color: #6d4d25;
   cursor: pointer;
   font-weight: 800;
+  text-decoration: none;
 }
 
 .upload-dropzone input {
@@ -577,6 +584,12 @@ a {
   height: 1px;
   opacity: 0;
   pointer-events: none;
+}
+
+.upload-dropzone:disabled,
+.submit-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
 }
 
 .spin {
