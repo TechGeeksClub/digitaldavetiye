@@ -17,6 +17,7 @@ export interface Invitation {
     mapsUrl: string;
   };
   heroImageUrl: string;
+  heroChildhoodImageUrl?: string;
   hashtag: string;
   rsvpEnabled: boolean;
   rsvpFormUrl?: string;
@@ -24,6 +25,7 @@ export interface Invitation {
   mediaUploadUrl?: string;
   gallery: string[];
   events: InvitationEvent[];
+  accommodations?: Accommodation[];
   travelGuide: {
     title: string;
     sections: Array<{
@@ -31,6 +33,11 @@ export interface Invitation {
       items: string[];
     }>;
   };
+}
+
+export interface Accommodation {
+  name: string;
+  mapsUrl: string;
 }
 
 export interface InvitationEvent {

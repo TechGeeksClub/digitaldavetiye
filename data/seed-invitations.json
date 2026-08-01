@@ -14,12 +14,13 @@
       "venue": {
         "name": "Divan Düğün Salonu",
         "address": "Divan Düğün Salonu",
-        "mapsUrl": "https://maps.google.com/?q=Divan%20D%C3%BC%C4%9F%C3%BCn%20Salonu"
+        "mapsUrl": "https://maps.app.goo.gl/4NKwFkDu9ekbv3m16"
       },
-      "heroImageUrl": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85",
+      "heroImageUrl": "/images/duygu-safa-current.jpg",
+      "heroChildhoodImageUrl": "/images/duygu-safa-childhood.jpeg",
       "hashtag": "DuyguSafaEvleniyor",
-      "rsvpEnabled": true,
-      "rsvpFormUrl": "https://forms.gle/K8AfMq1LccZFfXMfA",
+      "rsvpEnabled": false,
+      "rsvpFormUrl": "",
       "mediaUploadEnabled": true,
       "mediaUploadUrl": "https://www.dropbox.com/request/scxwn7er1u5puwt21ehr",
       "gallery": [
@@ -36,7 +37,17 @@
           "address": "Divan Düğün Salonu",
           "dressCode": "Şık giyim",
           "note": "Düğünümüzde sizleri aramızda görmekten mutluluk duyarız.",
-          "mapsUrl": "https://maps.google.com/?q=Divan%20D%C3%BC%C4%9F%C3%BCn%20Salonu"
+          "mapsUrl": "https://maps.app.goo.gl/4NKwFkDu9ekbv3m16"
+        }
+      ],
+      "accommodations": [
+        {
+          "name": "Tokat Öğretmenevi",
+          "mapsUrl": "https://maps.app.goo.gl/PXbykcj1yMF1YYDh6?g_st=iw"
+        },
+        {
+          "name": "Tokat DSİ Misafirhanesi",
+          "mapsUrl": "https://maps.app.goo.gl/HLqEzLmKFnwdHrWU8?g_st=iw"
         }
       ],
       "travelGuide": {
@@ -46,7 +57,6 @@
             "title": "Etkinlik Bilgileri",
             "items": [
               "Düğün 15 Ağustos 2026 Cumartesi günü saat 19:00'da başlayacaktır.",
-              "Katılım bildiriminizi davetiye üzerindeki formdan iletebilirsiniz.",
               "Fotoğraf ve videolarınızı davetiye üzerindeki yükleme bağlantısından paylaşabilirsiniz."
             ]
           }

@@ -1,4 +1,5 @@
 import {
+  BedDouble,
   CalendarDays,
   Camera,
   CheckCircle2,
@@ -14,7 +15,6 @@ import { useCountdown } from "../hooks/useCountdown";
 import type { Invitation } from "../types";
 import { createCalendarUrl, formatLongDate } from "../utils";
 import MediaUploadSection from "./MediaUploadSection";
-import RsvpForm from "./RsvpForm";
 
 interface Props {
   invitation: Invitation;
@@ -46,11 +46,25 @@ export default function InvitationTemplate({ invitation }: Props) {
   return (
     <div className="invite-page">
       <main className="invite-shell">
-        <section className="hero-section">
-          <div
-            className="hero-bg"
-            style={{ backgroundImage: `url("${invitation.heroImageUrl}")` }}
-          />
+        <section
+          className={`hero-section ${invitation.heroChildhoodImageUrl ? "has-timeline" : ""}`}
+        >
+          <div className="hero-media" aria-hidden="true">
+            <img
+              className={`hero-photo hero-photo-current ${
+                invitation.heroChildhoodImageUrl ? "is-animated" : ""
+              }`}
+              src={invitation.heroImageUrl}
+              alt=""
+            />
+            {invitation.heroChildhoodImageUrl ? (
+              <img
+                className="hero-photo hero-photo-childhood"
+                src={invitation.heroChildhoodImageUrl}
+                alt=""
+              />
+            ) : null}
+          </div>
           <div className="hero-shade" />
           <div className="hero-content">
             <span className="hero-kicker">{invitation.headline}</span>
@@ -161,6 +175,32 @@ export default function InvitationTemplate({ invitation }: Props) {
           </div>
         </section>
 
+        {invitation.accommodations?.length ? (
+          <section className="content-section accommodation-section">
+            <div className="section-title">
+              <BedDouble size={20} />
+              <h2>Konaklayabileceğiniz Konumlar</h2>
+            </div>
+            <div className="accommodation-list">
+              {invitation.accommodations.map((accommodation) => (
+                <div className="accommodation-row" key={accommodation.name}>
+                  <strong>{accommodation.name}</strong>
+                  <a
+                    className="location-icon-link"
+                    href={accommodation.mapsUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`${accommodation.name} konumunu aç`}
+                    title={`${accommodation.name} konumunu aç`}
+                  >
+                    <Navigation size={19} />
+                  </a>
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
         <section className="content-section gallery-section">
           <div className="section-title">
             <Camera size={20} />
@@ -194,16 +234,12 @@ export default function InvitationTemplate({ invitation }: Props) {
           ))}
         </section>
 
-        {invitation.rsvpEnabled ? (
-          <RsvpForm formUrl={invitation.rsvpFormUrl} />
-        ) : null}
-
         {invitation.mediaUploadEnabled ? (
           <MediaUploadSection uploadUrl={invitation.mediaUploadUrl} />
         ) : null}
 
         <footer className="invite-footer">
-          <span>Bu davetiye lokal MVP ile oluşturuldu.</span>
+          <span>Duygu & Safa · 15 Ağustos 2026</span>
           <a href="/">Ana sayfaya dön</a>
         </footer>
       </main>
