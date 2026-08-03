@@ -18,13 +18,12 @@ export interface Invitation {
   };
   heroImageUrl: string;
   heroChildhoodImageUrl?: string;
-  hashtag: string;
   rsvpEnabled: boolean;
   rsvpFormUrl?: string;
   mediaUploadEnabled: boolean;
   mediaUploadUrl?: string;
-  gallery: string[];
   events: InvitationEvent[];
+  schedule?: ScheduleItem[];
   accommodations?: Accommodation[];
   travelGuide: {
     title: string;
@@ -33,6 +32,11 @@ export interface Invitation {
       items: string[];
     }>;
   };
+}
+
+export interface ScheduleItem {
+  time: string;
+  title: string;
 }
 
 export interface Accommodation {

@@ -4,7 +4,7 @@
       "slug": "safa-duygu",
       "templateId": "classic-countdown",
       "headline": "Düğünümüze Davetlisiniz",
-      "message": "Bu mutlu günümüzde sizleri aramızda görmekten mutluluk duyarız.",
+      "message": "Özel günler birlikte güzel",
       "couple": {
         "bride": "Duygu",
         "groom": "Safa"
@@ -12,35 +12,67 @@
       "eventDate": "2026-08-15",
       "eventTime": "19:00",
       "venue": {
-        "name": "Divan Düğün Salonu",
-        "address": "Divan Düğün Salonu",
+        "name": "Divan Park Düğün Salonu",
+        "address": "Divan Park Düğün Salonu",
         "mapsUrl": "https://maps.app.goo.gl/4NKwFkDu9ekbv3m16"
       },
       "heroImageUrl": "/images/duygu-safa-current.jpg",
       "heroChildhoodImageUrl": "/images/duygu-safa-childhood.jpeg",
-      "hashtag": "DuyguSafaEvleniyor",
       "rsvpEnabled": false,
       "rsvpFormUrl": "",
       "mediaUploadEnabled": true,
-      "mediaUploadUrl": "https://www.dropbox.com/request/scxwn7er1u5puwt21ehr",
-      "gallery": [
-        "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80"
-      ],
+      "mediaUploadUrl": "https://1drv.ms/f/c/f75e4cfc6731ae1a/IgD2zOvqdy24R5jceWtfEEyDAT9_1K5Bg5Y6FbU51xjbrmA?e=lAm7Ts",
       "events": [
         {
           "title": "Düğün",
           "date": "2026-08-15",
           "time": "19:00",
-          "venueName": "Divan Düğün Salonu",
-          "address": "Divan Düğün Salonu",
+          "venueName": "Divan Park Düğün Salonu",
+          "address": "Divan Park Düğün Salonu",
           "dressCode": "Şık giyim",
           "note": "Düğünümüzde sizleri aramızda görmekten mutluluk duyarız.",
           "mapsUrl": "https://maps.app.goo.gl/4NKwFkDu9ekbv3m16"
         }
       ],
+      "schedule": [
+        {
+          "time": "16:30",
+          "title": "Gelin alma"
+        },
+        {
+          "time": "17:00",
+          "title": "Dostlarımızla fotoğraf çekimi"
+        },
+        {
+          "time": "19:00",
+          "title": "Nikah"
+        },
+        {
+          "time": "19:30",
+          "title": "İlk dans"
+        },
+        {
+          "time": "20:00",
+          "title": "Yemek başlangıcı"
+        },
+        {
+          "time": "20:30",
+          "title": "Bolca dans ve eğlence"
+        }
+      ],
       "accommodations": [
+        {
+          "name": "Dedeman Otel",
+          "mapsUrl": "https://maps.app.goo.gl/UDmMk6RGZ7fgb1Lg7?g_st=iw"
+        },
+        {
+          "name": "Yazmacılar Hanı Otel",
+          "mapsUrl": "https://maps.app.goo.gl/Eb9m7b8jejJ7FqBN7?g_st=iw"
+        },
+        {
+          "name": "İl Sağlık Müdürlüğü Misafirhanesi",
+          "mapsUrl": "https://maps.app.goo.gl/YBSCRJdnu2JMf4n89?g_st=iw"
+        },
         {
           "name": "Tokat Öğretmenevi",
           "mapsUrl": "https://maps.app.goo.gl/PXbykcj1yMF1YYDh6?g_st=iw"

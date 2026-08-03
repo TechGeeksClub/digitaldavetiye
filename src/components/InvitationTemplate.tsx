@@ -1,8 +1,6 @@
 import {
   BedDouble,
   CalendarDays,
-  Camera,
-  CheckCircle2,
   Clock,
   Heart,
   MapPin,
@@ -123,6 +121,19 @@ export default function InvitationTemplate({ invitation }: Props) {
               </span>
             </a>
           </div>
+          {invitation.schedule?.length ? (
+            <div className="schedule-card">
+              <h3>Günün Programı</h3>
+              <ol>
+                {invitation.schedule.map((item) => (
+                  <li key={`${item.time}-${item.title}`}>
+                    <time>{item.time}</time>
+                    <span>{item.title}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ) : null}
           <div className="button-row">
             <a className="gold-button" href={invitation.venue.mapsUrl} target="_blank" rel="noreferrer">
               <Navigation size={17} />
@@ -200,25 +211,6 @@ export default function InvitationTemplate({ invitation }: Props) {
             </div>
           </section>
         ) : null}
-
-        <section className="content-section gallery-section">
-          <div className="section-title">
-            <Camera size={20} />
-            <h2>Görsel Galeri</h2>
-          </div>
-          <div className="gallery-grid">
-            {invitation.gallery.map((image) => (
-              <img src={image} alt="Düğün galerisi" key={image} />
-            ))}
-          </div>
-          <div className="hashtag-card">
-            <CheckCircle2 size={18} />
-            <div>
-              <strong>#{invitation.hashtag}</strong>
-              <span>Sosyal medyada paylaştığın anıları bu etiketle bulalım.</span>
-            </div>
-          </div>
-        </section>
 
         <section className="content-section travel-section">
           <h2>{invitation.travelGuide.title}</h2>
